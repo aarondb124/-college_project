@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="csrf-token" content="D6tTa0ocg4e09tXUJ5ap8LytrINbJ2WBYKGquyFL">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="csrf-token" content="D6tTa0ocg4e09tXUJ5ap8LytrINbJ2WBYKGquyFL"/>
+        
+        <meta name="author" content="MD Sazzat Hossain" />
+        <title>Digital Shop | Edit Brand</title>
+        
+        <link href="http://127.0.0.1:8000/admin/css/select2.min.css" rel="stylesheet" />
+        <link href="http://127.0.0.1:8000/admin/css/bootstrap.min.css" rel="stylesheet">
+        <link href="http://127.0.0.1:8000/admin/css/dataTabel.css" rel="stylesheet" />
+        <link href="http://127.0.0.1:8000/admin/css/styles.css" rel="stylesheet" />
+        <link href="http://127.0.0.1:8000/admin/css/custom.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/admin/css/invoice.css">
+            </head>
+    <body class="sb-nav-fixed fixed-footer"  onload="startTime()">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark">
+    <!-- Navbar Brand-->
+    <a class="navbar-brand ps-3" href="">Digital Shop</a>
+    <!-- Sidebar Toggle-->
+    <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button> 
+    <!-- Navbar Clock-->
+    
+    <!-- Navbar Search-->
+    <form class="  form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+        <p class="text-white dashboard-date mb-0" id="date"><i class="far fa-clock"></i>&nbsp;<div id="txt" class="text-white">time</div></p>
+    </form>
+    <!-- Navbar-->
+    <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img class="profile-img" src="http://127.0.0.1:8000/images/avatar.png" alt=""> <spanm class="common-text">admin</span></a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="http://127.0.0.1:8000/setting/password/change"><i class="fa fa-user"></i> Password change</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="http://127.0.0.1:8000/logout" onclick="return confirm('Are you sure logout from Admin Panel')"><i class="fa fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>        <div id="layoutSidenav">  
+        
+            <div id="layoutSidenav_nav">
+    <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+        <div class="sb-sidenav-menu">
+                        <div class="nav">
+                
+                <a class="nav-link  " href="http://127.0.0.1:8000/dashboard">
+                    <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    Dashboard
+                </a>
+                                                                                                    <a class="nav-link "  href="http://127.0.0.1:8000/order">
+                            <div class="sb-nav-link-icon"><i class="fas fa-spinner"></i></div>
+                            Pending Order
+                            </a> 
+                                                                
+                                        
+                                        
+                                                                                                                    
+                                                                    <a class="nav-link " href="http://127.0.0.1:8000/onprocess">
+                            <div class="sb-nav-link-icon"><i class="fas fa-project-diagram"></i></div>
+                            On Processing Order
+                        </a> 
+                                                                
+                                        
+                                                                                                                    
+                                                                                        <a class="nav-link " href="http://127.0.0.1:8000/order-way">
+                            <div class="sb-nav-link-icon"><i class="fas fa-road"></i></div>
+                            On The way
+                        </a> 
+                                            
+                                        
+                                                                                                                    
+                                        
+                                                                    <a class="nav-link " href="http://127.0.0.1:8000/delivered">
+                            <div class="sb-nav-link-icon"><i class="fas fa-truck-loading"></i></div>
+                            Delivered Order
+                        </a> 
+                                                                
+                                                                                                                    
+                                        
+                                        
+                                                                    <a class="nav-link " href="http://127.0.0.1:8000/sales-report">
+                            <div class="sb-nav-link-icon"><i class="fas fa-balance-scale-left"></i></div>
+                            Sales Report
+                        </a> 
+                                                                                                                                            
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                                                                <a class="nav-link " href="http://127.0.0.1:8000/cancel/list">
+                        <div class="sb-nav-link-icon"><i class="fas fa-truck-loading"></i></div>
+                        Order Cancel List
+                    </a> 
+                                    
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                        <a class="nav-link " href="http://127.0.0.1:8000/order/record">
+                            <div class="sb-nav-link-icon"><i class="fas fa-balance-scale-left"></i></div>
+                            Order Record
+                        </a> 
+                                                                                                                        
+                                        
+                                        
+                                                                                                            <a class="nav-link " href="http://127.0.0.1:8000/quote-record">
+                            <div class="sb-nav-link-icon"><i class="fas fa-balance-scale-left"></i></div>
+                            Quotation Record
+                        </a> 
+                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                                    
+                                        
+                                        
+                                                                                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts1" aria-expanded="false" aria-controls="collapseLayouts">
+                        <div class="sb-nav-link-icon"><i class="fas fa-window-restore"></i></div>
+                            Product Info
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                <div class="collapse " id="collapseLayouts1" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                    <nav class="sb-sidenav-menu-nested nav">
+                        
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                        <a class="nav-link " href="http://127.0.0.1:8000/product/product-create"><i class="fas fa-angle-right"></i>&nbsp;Product Entry</a>
+                                                                                                                                                                                                                                                          
+                                                 
+                                                                                                                                                    <a class="nav-link "  href="http://127.0.0.1:8000/product/product"><i class="fas fa-angle-right"></i>&nbsp;Product List</a>
+                                                                                                                                                                                                                              
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                            <a class="nav-link "  href="http://127.0.0.1:8000/product/category"><i class="fas fa-angle-right"></i>&nbsp;Category Entry</a> 
+                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                            <a class="nav-link " href="http://127.0.0.1:8000/product/category-list"><i class="fas fa-angle-right"></i>&nbsp;Category List</a>
+                                                                                                                                                                      
+                                                 
+                                                                                                                                                                                                                                        <a class="nav-link " href="http://127.0.0.1:8000/product/subcategory"><i class="fas fa-angle-right"></i>&nbsp;Sub Category Entry</a>
+                                                                                                                                          
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                                    <a class="nav-link " href="http://127.0.0.1:8000/product/subcategory-list"><i class="fas fa-angle-right"></i>&nbsp;Sub Category List</a>
+                                                                                                              
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                                                      <a class="nav-link " href="http://127.0.0.1:8000/product/sub-subcategory"><i class="fas fa-angle-right"></i>&nbsp;Sub Subcategory Entry</a>
+                                                                               
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                                                                                                                                                                                                                  
+                                                 
+                                                <a class="nav-link " href="http://127.0.0.1:8000/product/brand"><i class="fas fa-angle-right"></i>&nbsp;Brand Entry</a>
+                        <a class="nav-link " href="http://127.0.0.1:8000/product/pixel"><i class="fas fa-angle-right"></i>&nbsp;Pixel Entry</a>
+                        <a class="nav-link " href="http://127.0.0.1:8000/product/recording_mode"><i class="fas fa-angle-right"></i>&nbsp;Recording Mode</a>
+                        <a class="nav-link " href="http://127.0.0.1:8000/product/camera_format"><i class="fas fa-angle-right"></i>&nbsp;Camera Format</a>
+                        <a class="nav-link " href="http://127.0.0.1:8000/product/sensor"><i class="fas fa-angle-right"></i>&nbsp;Sensor Entry</a>
+                        <a class="nav-link " href="http://127.0.0.1:8000/product/effective_pixel"><i class="fas fa-angle-right"></i>&nbsp; Effective Entry</a>
+                        <a class="nav-link " href="http://127.0.0.1:8000/product/monitor_size"><i class="fas fa-angle-right"></i>&nbsp; Monitor Size</a>
+                       
+                    </nav>
+                </div>
+                    <a class="nav-link collapsed" href="http://127.0.0.1:8000/customer/customer" data-bs-toggle="collapse" data-bs-target="#collapseLayouts2" aria-expanded="false" aria-controls="collapseLayouts">
+                        <div class="sb-nav-link-icon"><i class="fas fa-users-cog"></i></div>
+                            Customer
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                <div class="collapse " id="collapseLayouts2" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                    <nav class="sb-sidenav-menu-nested nav">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <a class="nav-link " href="http://127.0.0.1:8000/customer/customer"><i class="fas fa-angle-right"></i>&nbsp;Customer Entry</a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <a class="nav-link " href="http://127.0.0.1:8000/customer/customer-list"><i class="fas fa-angle-right"></i>&nbsp;Customer List</a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </nav>
+                </div>
+                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts3" aria-expanded="false" aria-controls="collapseLayouts">
+                    <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                    Website Contents
+                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                </a>
+                <div class="collapse  " id="collapseLayouts3" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                    <nav class="sb-sidenav-menu-nested nav">
+                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                            <a class="nav-link " href="http://127.0.0.1:8000/website-content/banner"><i class="fas fa-angle-right"></i>&nbsp;Slider Entry</a>
+                                                                                                                                                                             
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <a class="nav-link " href="http://127.0.0.1:8000/website-content/about-us"><i class="fas fa-angle-right"></i>&nbsp;About Us Page</a>
+                                                             
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                <a class="nav-link " href="http://127.0.0.1:8000/website-content/mission/vision"><i class="fas fa-angle-right"></i>&nbsp;Mission-Vission</a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                    <a class="nav-link "  href="http://127.0.0.1:8000/website-content/management"><i class="fas fa-angle-right"></i>&nbsp;Management</a>
+                                                                                                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                    <a class="nav-link " href="http://127.0.0.1:8000/website-content/team"><i class="fas fa-angle-right"></i>&nbsp;Our Team Page</a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                        <a class="nav-link " href="http://127.0.0.1:8000/website-content/ad"><i class="fas fa-angle-right"></i>&nbsp;Ad Management</a>
+                                                                                                                                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                            <a class="nav-link " href="http://127.0.0.1:8000/website-content/partner"><i class="fas fa-angle-right"></i>&nbsp; Partner</a>
+                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                        <a class="nav-link " href="http://127.0.0.1:8000/website-content/news-and-event"><i class="fas fa-angle-right"></i>&nbsp; What Happing New</a>
+                                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                        <a class="nav-link " href="http://127.0.0.1:8000/website-content/branch"><i class="fas fa-angle-right"></i>&nbsp;Branch Entry</a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                <a class="nav-link " href="http://127.0.0.1:8000/website-content/admin-faq"><i class="fas fa-angle-right"></i>&nbsp;FAQ Page</a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                <a class="nav-link " href="http://127.0.0.1:8000/website-content/admin-service"><i class="fas fa-angle-right"></i>&nbsp;News Entry</a>
+                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                        
+                    </nav>
+                </div>
+                
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <a class="nav-link   " href="http://127.0.0.1:8000/feedback">
+                                <div class="sb-nav-link-icon"><i class="fas fa-sms"></i></div>
+                                Public Message 
+                            </a>
+                                                                                                                                                                            <a class="nav-link  " href="http://127.0.0.1:8000/service-repair">
+                                <div class="sb-nav-link-icon"><i class="fas fa-id-card-alt"></i></div>
+                                Repair & Service List
+                            </a>
+                                                                                                                                                                                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts4" aria-expanded="false" aria-controls="collapseLayouts">
+                    <div class="sb-nav-link-icon"><i class="fas fa-sliders-h"></i></div>
+                    Settings
+                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                </a>
+                
+                <div class="collapse  " id="collapseLayouts4" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                    <nav class="sb-sidenav-menu-nested nav">
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                    <a class="nav-link " href="http://127.0.0.1:8000/setting/company-profile"><i class="fas fa-angle-right"></i>&nbsp;company profile</a>
+                                                                                                                        
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                                                            <a class="nav-link " href="http://127.0.0.1:8000/setting/area"><i class="fas fa-angle-right"></i>&nbsp;Area Entry</a>
+                                                                                        
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                                <a class="nav-link " href="http://127.0.0.1:8000/setting/page/list"><i class="fas fa-angle-right"></i>&nbsp;Page List</a>
+                                                                                                                    
+                                                                                                                 
+                            
+                                                                                                                                                    <a class="nav-link " href="http://127.0.0.1:8000/setting/sms/sending"><i class="fas fa-angle-right"></i>&nbsp;SMS Sending</a>
+                                                                                            
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                                                        <a class="nav-link "  href="http://127.0.0.1:8000/setting/permission"><i class="fas fa-angle-right"></i>&nbsp;Permission</a>
+                                                                                         
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                            <a class="nav-link "  href="http://127.0.0.1:8000/setting/user-create"><i class="fas fa-angle-right"></i>&nbsp;User Create</a>
+                                                                                                                     
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                                                                                                
+                                                                                    
+                                                                                                                 
+                            
+                                               
+                    </nav>
+                </div>
+                <a class="nav-link" href="http://127.0.0.1:8000/logout" onclick="return confirm('Are you sure logout from Admin Panel')">
+                    <div class="sb-nav-link-icon"><i class="fas fa-sign-out-alt"></i></div>
+                    Log Out
+                </a>
+            </div>
+        </div>
+    </nav>
+</div>            <div id="layoutSidenav_content">
+                 <div class="container mt-4">
+                     
+                    
+                    
+                                        
+                    
+                                        
+                <main>
+   <div class="container ">
+    <div class="heading-title p-2 my-2">
+        <span class="my-3 heading "><i class="fas fa-home"></i> <a class="" href="http://127.0.0.1:8000/dashboard">Home</a> > Category Update</span>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            <i class="fas fa-cogs"></i>
+            Update Brand
+        </div>
+        <div class="card-body table-card-body p-3 mytable-body">
+            <form action="http://127.0.0.1:8000/product/brand/4" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="_token" value="D6tTa0ocg4e09tXUJ5ap8LytrINbJ2WBYKGquyFL">                <input type="hidden" name="_method" value="put">                <div class="row ">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label>Brand Name:</label>
+                            </div>
+                            <div class="col-md-7">
+                                <input type="text" name="name" value="Olympus" class="form-control">
+                                <input type="checkbox" name="is_popular" id="is_popular"checked value="1" title="is popular">
+                                <label for="is_popular"> Is Popular</label>
+                            </div>
+                        
+                        </div>
+                        <div class="row">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <label>Image </label>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <input type="file" class="form-control" id="image" name="image" onchange="readURL(this);">
+                                    </div>
+                                    <div class="col-md-12 text-center mt-2">
+                                        <img class="form-controlo img-thumbnail" src="#" id="previewImage" style="height:120px;width:140px; background: #3f4a49;">
+                                    </div>
+                                </div>
+                      
+                        </div>
+                    </div>
+                    <div class="">
+                        <button type="submit" class="btn btn-primary btn-sm" value="Submit">Update</button>
+                    </div>
+                </div>
+                        
+                  
+                </div>
+            </form>
+        </div>
+   </div>
+      
+    </div>
+</main>        
+ 
+                <footer class="bg-light mt-3 sticky-footer">
+    <div class="container-fluid footer-section">
+       <div class="container">
+           <div class="row ">
+               <div class="col-sm-6 text-left">
+                   <p class="mb-0 py-2">Copyright &copy; Digital Shop </p>
+               </div>
+               <div class="col-sm-6 text-right">
+                <p class="mb-0 py-2">Developed By <a href="https://linktr.ee/aarondb124" target="_blank"
+                            class="text-decoration-none text-black fw-bolder">aarondb124</a></p> 
+            </div>
+           </div>
+       </div>
+    </div>
+</footer>            </div>
+        </div>
+        <script src="http://127.0.0.1:8000/admin/js/jquery-3.6.0.min.js"></script>
+        <script src="http://127.0.0.1:8000/admin/js/bootstrap.bundle.min.js"></script>
+        <script src="http://127.0.0.1:8000/admin/js/scripts.js"></script>
+        <script src="http://127.0.0.1:8000/admin/js/simple-datatables@latest.js"></script>
+        <script src="http://127.0.0.1:8000/admin/js/datatables-simple-demo.js"></script>
+        <script src="http://127.0.0.1:8000/admin/js/select2.min.js"></script>
+        <script src="http://127.0.0.1:8000/admin/js/all.min.js"></script>
+        <script>
+            function startTime() {
+              const today = new Date();
+              const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+              const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+              let d = today.getDay();
+              let date = today.getDay();
+              let h = today.getHours();
+              let m = today.getMinutes();
+              let s = today.getSeconds();
+              m = checkTime(m);
+              s = checkTime(s);
+              document.getElementById('txt').innerHTML =days[today.getDay()]+','+' '+today.getDate()+' '+months[today.getMonth()]+' '+today.getFullYear()+','+' '+h + ":" + m + ":" + s;
+              setTimeout(startTime, 1000);
+            }
+            function checkTime(i) {
+              if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+              return i;
+            }
+            </script>
+        <script>
+            $("document").ready(function(){
+              setTimeout(function(){
+              $("div.alert").fadeOut();
+              }, 3000 ); // 5 secs
+
+              $('.js-example-basic-multiple').select2();
+          });
+      </script>
+     
+      <script>
+          window.addEventListener('DOMContentLoaded', event => {
+          // Simple-DataTables
+          // https://github.com/fiduswriter/Simple-DataTables/wiki
+      
+          const datatablesSimple = document.getElementById('first_table');
+          if (datatablesSimple) {
+              new simpleDatatables.DataTable(datatablesSimple);
+          }
+          const confirmTable = document.getElementById('confirm');
+          if (confirmTable) {
+              new simpleDatatables.DataTable(confirmTable);
+          }
+          });
+      </script>
+        <script> 
+    function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload=function(e) {
+                    $('#previewImage')
+                        .attr('src', e.target.result)     
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        document.getElementById("previewImage").src="http://127.0.0.1:8000/uploads/brand/samsung-logo_6641e1cb605e9.png";
+        
+        
+    </script> 
+
+    </body>
+</html>

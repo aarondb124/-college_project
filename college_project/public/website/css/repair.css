@@ -1,0 +1,106 @@
+.field-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+.field-wrapper label {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: #6b6b6b;
+    transition: all .1s linear;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #fff;
+}
+.form-control {
+    padding: 15px;
+    height: 40px;
+    color: #666;
+    border-color: #e8e8e8;
+}
+.btn.btn-primary {
+    background-color: #e80000;
+    border-color: #e80000;
+}
+.btn {
+    padding: 10px 20px;
+    font-weight: 700;
+}
+.main-wrap .seperate{
+    position: relative;
+}
+.main-wrap .seperate:after {
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    box-shadow: 6px 0 12px 0 rgba(0,0,0,.12);
+    content: "";
+    top: 0;
+    right: 5px;
+}
+.main-wrap>.col-md-6:first-child {
+    padding: 50px 50px 50px 25px;
+}
+.main-wrap h2 {
+    margin: 0 0 25px;
+    font-weight: 500;
+    font-size: 32px;
+   
+}
+.field-wrapper textarea.form-control {
+    padding-top: 20px;
+    min-height: 100px!important;
+}
+.form-control:focus {
+    box-shadow: none;
+    border-color: #86c7ff;
+}
+.news-section {
+    background: #fff;
+}
+.accent-bg {
+    background-color: #f2f2f2;
+}
+.big__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.big__heading h2 {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 40px;   
+    margin: 0; 
+    line-height: 1;
+}
+.faq__item {
+    margin-bottom: 20px;
+}
+.faq__item .faq-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    background: #000;
+    color: #fff;
+    font-size: 20px;
+    text-transform: none;
+}
+.faq__item .faq-collapse {
+    border-radius: 3px;
+    padding: 15px;
+    border: 1px solid #e8e8e8;
+    border-top: none;
+    background: #f6f6f6;
+}
+.accordion-button:focus {
+    z-index: 3;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
